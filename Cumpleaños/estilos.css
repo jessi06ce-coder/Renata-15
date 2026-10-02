@@ -1,6 +1,6 @@
  :root {
-            --color-principal: #ca8282; 
-            --color-texto:rgb(255, 233, 233) ;
+           
+            --color-texto:rgb(255, 255, 255) ;
             --color-acento: #f58c8c;
              
         }
@@ -18,8 +18,11 @@
 
         header {
     padding: 50px 20px;
-    background-color: var(--color-principal);
-
+    background-image: url(../paris.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     z-index: 5;
     overflow: visible;
@@ -45,8 +48,8 @@
         #countdown div {
             background:  linear-gradient(
         150deg,
-        rgb(168, 119, 44) 30%,
-        #fdda79 100%
+        rgb(199, 143, 58) 30%,
+        #f0cc6a 100%
     );
             border: 2px solid rgb(255, 233, 197);
             border-radius: 10px;
@@ -286,24 +289,13 @@
 
 .rosas-union {
     position: absolute;
-
     left: 50%;
-
-    /*
-       BAJAMOS LA IMAGEN PARA QUE LAS ROSAS
-       VISIBLES CRUCEN REALMENTE LA UNIÓN
-    */
-    bottom: -75px;
-
+    top: 280px; /* sube o baja según necesites */
     transform: translateX(-50%);
-
-    width: 100%;
-    max-width: 430px;
-
+    width: 70%;
+    max-width: 700px;
     height: auto;
-
-    z-index: 20;
-
+    z-index: 10; /* asegura que esté por encima del fondo dorado */
     pointer-events: none;
 }
 
@@ -326,6 +318,7 @@
         max-width: 600px;
         bottom: -70px;
     }
+
 }
 
 
